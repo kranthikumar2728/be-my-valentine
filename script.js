@@ -33,10 +33,10 @@ function handleYesClick() {
     const herName = "Sunitha";
 
     container.innerHTML = `
-        <h1 class="header_text">Knew you would say yes, ${herName}! ❤️</h1>
+        <h1 class="header_text">I Knew you would say yes, ${herName}! ❤️</h1>
         <h3 style="color: #ff4d6d; margin-top: -10px;">Forever yours, ${myName}</h3>
         <div class="gif_container">
-            <img src="img3.gif" alt="Hugs" style="height: 250px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            <img src="./img3.gif" alt="Hugs" style="height: 250px; border-radius: 15px;">
         </div>
     `;
     
@@ -66,4 +66,5 @@ function createHeart() {
 
 // Start the heart rain
 setInterval(createHeart, 300);
+
 
