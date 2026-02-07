@@ -51,3 +51,21 @@ button {
     background-color: #808080;
     color: white;
 }
+
+/* Heart Animation */
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 20px;
+    color: #ff4d6d;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear forwards;
+    z-index: -1; /* Keeps hearts behind the buttons */
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
