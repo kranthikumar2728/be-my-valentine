@@ -32,11 +32,16 @@ function handleYesClick() {
     const myName = "Kranthi"; 
     const herName = "Sunitha";
 
+    const imagePath = "./img3.gif";
+
     container.innerHTML = `
         <h1 class="header_text">I Knew you would say yes, ${herName}! ❤️</h1>
         <h3 style="color: #ff4d6d; margin-top: -10px;">Forever yours, ${myName}</h3>
         <div class="gif_container">
-            <img src="./img3.gif" alt="Hugs" style="height: 250px; border-radius: 15px;">
+            <img src="${imagePath}" 
+                 onerror="this.src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJndnBqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqZ3ZqJnBvPT1hJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbxxvDUQM/giphy.gif'" 
+                 alt="Hugs" 
+                 style="height: 250px; border-radius: 15px;">
         </div>
     `;
     
@@ -66,5 +71,6 @@ function createHeart() {
 
 // Start the heart rain
 setInterval(createHeart, 300);
+
 
 
